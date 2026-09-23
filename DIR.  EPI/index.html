@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección de Epidemiología | Ministerio de Salud - La Rioja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado Institucional -->
+    <header>
+        <div class="logo-container">
+            <h1>Ministerio de Salud</h1>
+            <h2>Gobierno de La Rioja</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Boletines</a></li>
+                <li><a href="#">Prevención</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section class="alerta" id="cajaAlerta">
+            <h3>⚠️ Alerta Epidemiológica: Prevención del Dengue</h3>
+            <p>Elimine los criaderos de mosquitos en su hogar. El descacharreo es la medida más efectiva.</p>
+            <button id="btnCerrarAlerta">Entendido</button>
+        </section>
+
+        <section class="tablero">
+            <h2>Monitor Epidemiológico Provincial</h2>
+            <p>Última actualización: <span id="fechaActualizacion">Esperando datos...</span></p>
+            
+            <div class="tarjetas-datos">
+                <div class="tarjeta">
+                    <h3>Casos de Dengue (Semana actual)</h3>
+                    <p class="numero" id="datosDengue">--</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Casos de COVID-19</h3>
+                    <p class="numero" id="datosCovid">--</p>
+                </div>
+            </div>
+
+            <button id="btnActualizar">Obtener últimos reportes</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Dirección de Epidemiología - Ministerio de Salud de la Provincia de La Rioja</p>
+        <p>Centro Administrativo Provincial (CAP) - La Rioja, Argentina</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
